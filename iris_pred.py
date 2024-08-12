@@ -26,8 +26,10 @@ se2 = st.slider("花萼寬度:", 1.8, 5.0, 3.8)
 se3 = st.slider("花瓣長度:", 0.7, 7.2, 5.0)
 se4 = st.slider("花瓣寬度:", 0.0, 3.5, 1.8)
 
+st.image("iris.png")
 # 進行預測
 labels = ['Setosa', 'Versicolor', 'Virginica']
+
 if st.button("進行預測"):
     X = [[se1, se2, se3, se4]]
     y = model.predict(X)
